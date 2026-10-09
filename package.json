@@ -1,12 +1,21 @@
 {
   "name": "selenium-practice-saucedemo",
-  "version": "1.0.0",
-  "description": "Beginner Selenium WebDriver practice project for Software Testing interviews",
+  "version": "1.1.0",
+  "description": "Professional beginner Selenium WebDriver + JavaScript practice project for Software Testing interviews",
   "main": "tests/login.test.js",
   "scripts": {
-    "test": "node tests/login.test.js"
+    "test": "node tests/login.test.js",
+    "test:cart": "node tests/addToCart.test.js",
+    "test:all": "node tests/login.test.js && node tests/addToCart.test.js"
   },
-  "keywords": ["selenium", "javascript", "testing", "automation"],
+  "keywords": [
+    "selenium",
+    "javascript",
+    "webdriver",
+    "automation",
+    "testing",
+    "qa"
+  ],
   "author": "Vinay Adabala",
   "license": "MIT",
   "dependencies": {

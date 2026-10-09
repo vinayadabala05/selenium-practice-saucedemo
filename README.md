@@ -1,37 +1,58 @@
-# Selenium Practice – SauceDemo Login Test
+# Selenium WebDriver Practice Project
 
-Beginner-level **Selenium WebDriver + JavaScript** practice project.
-
-Created for Software Testing Engineer interview preparation (Virtusa / similar roles).
+**Author:** Vinay Adabala  
+**Purpose:** Hands-on practice for Software Testing Engineer interviews (Virtusa and similar roles)
 
 ---
 
-## What this project does
+## Project Overview
 
-- Opens Chrome browser
-- Goes to [https://www.saucedemo.com](https://www.saucedemo.com)
-- Logs in with valid credentials
-- Verifies that the **Products** page is displayed
-- Closes the browser
+This is a clean beginner-level **Selenium WebDriver + JavaScript** automation project.
+
+It demonstrates:
+- Browser automation
+- Element location strategies (ID, Class Name)
+- Explicit waits
+- Assertions
+- Multiple test cases
+- Clean and readable code structure
+
+**Application under test:** [SauceDemo](https://www.saucedemo.com)
+
+---
+
+## Test Cases Included
+
+| Test Case          | Description                              | File                  |
+|--------------------|------------------------------------------|-----------------------|
+| Valid Login        | Login with valid credentials and verify Products page | `tests/login.test.js` |
+| Add to Cart        | Login → Add product → Verify cart badge and product name | `tests/addToCart.test.js` |
 
 ---
 
 ## Prerequisites
 
-1. **Node.js** installed (https://nodejs.org)
-2. **Google Chrome** browser
-3. ChromeDriver (Selenium 4 usually manages this automatically)
+- Node.js (v16 or higher)
+- Google Chrome browser
 
 ---
 
-## How to run
+## How to Run
 
 ```bash
-# 1. Install dependencies
+# Clone the repository
+git clone https://github.com/vinayadabala05/selenium-practice-saucedemo.git
+cd selenium-practice-saucedemo
+
+# Install dependencies
 npm install
 
-# 2. Run the test
-npm test
+# Run individual tests
+npm test              # Runs Login test
+npm run test:cart     # Runs Add to Cart test
+
+# Run all tests
+npm run test:all
 ```
 
 ---
@@ -41,24 +62,37 @@ npm test
 ```
 selenium-practice-saucedemo/
 ├── package.json
-├── tests/
-│   └── login.test.js
-└── README.md
+├── README.md
+└── tests/
+    ├── login.test.js
+    └── addToCart.test.js
 ```
 
 ---
 
-## Next steps to improve this project
+## Key Learning Points Demonstrated
 
-1. Add more test cases (invalid login, add to cart, checkout)
-2. Use Mocha or Jest as a test runner
-3. Add assertions library (Chai)
-4. Create Page Object Model structure
-5. Run tests in headless mode
+- Using `Builder` to create WebDriver instance
+- Locating elements with `By.id` and `By.className`
+- Explicit waits with `driver.wait` and `until`
+- Reading text and performing assertions
+- Proper use of `try-catch-finally` for browser cleanup
+- Clear console logging for test steps and results
+
+---
+
+## Next Improvements (Future Learning)
+
+1. Convert to Mocha + Chai test framework
+2. Implement Page Object Model (POM)
+3. Add data-driven testing
+4. Run tests in headless mode
+5. Generate HTML test reports
 
 ---
 
 ## Author
 
 **Vinay Adabala**  
-GitHub: [vinayadabala05](https://github.com/vinayadabala05)
+- GitHub: [vinayadabala05](https://github.com/vinayadabala05)  
+- LinkedIn: [vinay-adabala05](https://www.linkedin.com/in/vinay-adabala05/)
