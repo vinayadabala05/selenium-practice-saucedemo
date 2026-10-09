@@ -1,0 +1,15 @@
+{
+  "name": "selenium-practice-saucedemo",
+  "version": "1.0.0",
+  "description": "Beginner Selenium WebDriver practice project for Software Testing interviews",
+  "main": "tests/login.test.js",
+  "scripts": {
+    "test": "node tests/login.test.js"
+  },
+  "keywords": ["selenium", "javascript", "testing", "automation"],
+  "author": "Vinay Adabala",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-webdriver": "^4.25.0"
+  }
+}
